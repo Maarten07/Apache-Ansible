@@ -1,0 +1,17 @@
+- name: Starten Apache
+  ansible.builtin.service:
+    name: "{{ webengine_service }}"
+    state: started
+    enabled: true
+
+- name: Starten PHP
+  ansible.builtin.service:
+    name: "{{ php_service }}"
+    state: started
+    enabled: yes
+
+- name: Starten PHP-MySQL
+  ansible.builtin.service:
+    name: "{{ php_mysql_service }}"
+    state: started
+    enabled: yes

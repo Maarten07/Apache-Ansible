@@ -1,0 +1,17 @@
+- name: Installeren Apache
+  ansible.builtin.package:
+    name: "{{ webengine }}"
+    state: present
+  notify: Starten Apache
+
+- name: Installeren PHP
+  ansible.builtin.package:
+    name: "{{ php_programma }}"
+    state: present
+  notify: Starten PHP
+
+- name: Installeren PHP-MySQL
+  ansible.builtin.package:
+    name: "{{ php_mysql }}"
+    state: present
+  notify: Starten PHP-MySQL

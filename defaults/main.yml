@@ -1,0 +1,8 @@
+webengine: apache2
+webengine_service: apache2
+
+php_programma: php
+php_service: php
+
+php_mysql: php-mysql
+php_mysql_service: php-mysqlnd
