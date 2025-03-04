@@ -1,0 +1,1 @@
+Dit is een rol dat Apache2 installeert op een doelsysteem. Deze rol is bedoeld voor Debian-based systemen.
